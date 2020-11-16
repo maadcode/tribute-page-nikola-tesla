@@ -30,5 +30,8 @@ window.addEventListener('scroll', () => {
     $content.style.transform = `translateY(${scroll / (sectionHeight + sectionY.top) * 50 - 50}px)`;
     $imageContainer.style.transform = `translateY(${scroll / (sectionHeight + sectionY.top) * -50 + 50}px)`;
 
-    $border.style.width = `${scroll / (sectionY.top + sectionHeight) * 80}%`
+    let maxWidth = scroll / (sectionY.top + sectionHeight) * 80
+    if(maxWidth <= 100) {
+        $border.style.width = `${maxWidth}%`
+    }
 })
