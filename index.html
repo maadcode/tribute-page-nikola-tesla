@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Tribute Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 class="logo">Nikola<span> Tesla</span></h3>
+                <a href="#main">
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <h1 class="big-title translate" data-speed="0.1" id="title">Tesla's Tribute Page</h1>
+
+        <img src="assets/person.png" class="person translate" data-speed="-0.25" alt="">
+    </header>
+
+    <section id="main">
+        <div class="shadow"></div>
+
+        <div class="container">
+            <div class="content opacity">
+                <h3 class="title">
+                    About Nikola Tesla
+                    <div class="border"></div>
+                </h3>
+                <p class="text">Nikola Tesla, of Serbian ethnicity, was born in the town of Smiljan (currently in Croatia), in the then Austro-Hungarian Empire, and later became an American citizen.</p>
+                <p class="text">After his demonstration of wireless radio wave communication in 1894 and after his victory in the War of the Currents, he was widely recognized as one of the best electrical engineers in the United States of America.</p>
+            </div>
+
+            <figure class="img-container opacity" id="img-div">
+                <img src="assets/about.jpg" alt="Nikola Tesla's photo" id="image">
+                <figcaption>
+                    Nikola Tesla's photo
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="inventions">
+            <h3 class="title" id="tribute-info">Inventions and discoveries</h3>
+            <ul class="text">
+                <li>Wireless transfer of electrical energy using electromagnetic waves.</li>
+                <li>Alternating current generator.</li>
+                <li>Bulb without filament or fluorescent lamp.</li>
+                <li>Electrotherapy or diagnostic devices, especially a single electrode X-ray generator.</li>
+                <li>Paddleless turbine, operated by fluid friction</li>
+                <li>Tesla coil</li>
+            </ul>
+            <br>
+            <p class="text">If you would like to know more <a href="https://es.wikipedia.org/wiki/Nikola_Tesla" class="link" target="_blank" id="tribute-info">click here</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> by <a href="https://github.com/maadcode" class="link">Maadcode</a></p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
